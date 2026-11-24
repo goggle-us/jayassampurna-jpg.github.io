@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regi • Pelajar & Pemula Coding</title>
+    <meta name="description" content="Portofolio Regi, pelajar dari Pekalongan yang belajar membuat website dan program.">
+    <style>
+        :root {
+            --latar: #ffffff;
+            --teks: #111111;
+            --teks-redup: #6b6b6b;
+            --garis: #e5e5e5;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --latar: #0e0e0e;
+                --teks: #f2f2f2;
+                --teks-redup: #9a9a9a;
+                --garis: #2a2a2a;
+            }
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: "Helvetica Neue", Arial, sans-serif;
+            background: var(--latar);
+            color: var(--teks);
+            line-height: 1.6;
+        }
+
+        main {
+            max-width: 680px;
+            margin: 0 auto;
+            padding: 80px 24px 60px;
+        }
+
+        h1 { font-size: 44px; letter-spacing: -1px; line-height: 1.1; }
+        .peran { color: var(--teks-redup); margin-top: 8px; font-size: 18px; }
+
+        .intro { margin-top: 32px; font-size: 18px; }
+
+        h2 {
+            margin-top: 64px;
+            font-size: 13px;
+            font-weight: normal;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--teks-redup);
+            padding-bottom: 12px;
+            border-bottom: 1px solid var(--garis);
+        }
+
+        .baris {
+            display: flex;
+            justify-content: space-between;
+            gap: 16px;
+            padding: 16px 0;
+            border-bottom: 1px solid var(--garis);
+            text-decoration: none;
+            color: inherit;
+        }
+        .baris:hover .judul { text-decoration: underline; }
+        .judul { font-weight: bold; }
+        .ket { color: var(--teks-redup); font-size: 15px; }
+        .tahun { color: var(--teks-redup); white-space: nowrap; }
+
+        a.link { color: var(--teks); }
+
+        footer {
+            margin-top: 80px;
+            color: var(--teks-redup);
+            font-size: 14px;
+        }
+
+        @media (max-width: 500px) {
+            h1 { font-size: 34px; }
+        }
+    </style>
+</head>
+<body>
+<main>
+
+    <h1>Muhamad Regina<br>Jaya Sampurna</h1>
+    <p class="peran">Mahasiswa & Freelance, Kota Pekalongan</p>
+
+    <p class="intro">
+        Halo, saya Regi. Mahasiswa Fakultas Hukum Universitas Negeri Semarang yang aktif dalam bidang akademik, dan Pemprograman.
+    </p>
+
+    <h2>Proyek</h2>
+    <div class="baris">
+        <div>
+            <div class="judul">Website Profil</div>
+            <div class="ket">Halaman portofolio pribadi dengan HTML, Python dan CSS.</div>
+        </div>
+        <div class="tahun">2026</div>
+    </div>
+    <div class="baris">
+        <div>
+            <div class="judul">Program HTML, Python dan CSS</div>
+            <div class="ket">Kalkulator sederhana, Pembuatan Website.</div>
+        </div>
+        <div class="tahun">2026</div>
+    </div>
+
+    <h2>Keterampilan</h2>
+    <div class="baris">
+        <div>
+            <div class="judul">Python</div>
+            <div class="ket">Data Science, Pengembangan Web.</div>
+        </div>
+    </div>
+    <div class="baris">
+        <div>
+            <div class="judul">HTML & CSS</div>
+            <div class="ket">Struktur dan tampilan halaman web.</div>
+        </div>
+    </div>
+
+    <h2>Kontak</h2>
+    <a class="baris" href="file:///C:/Users/Hi/Downloads/cv-muhamad-regina-jaya-sampurna.pdf%20(1).pdf" target="_blank" rel="noopener">
+        <span class="judul">CV</span>
+        <span class="tahun">&rarr;</span>
+    </a>
+    <a class="baris" href="mailto:jayassampurna@gmail.com">
+        <span class="judul">Contact</span>
+        <span class="tahun">&rarr;</span>
+    </a>
+
+    <footer>&copy; 2026 Regi. Dibuat dengan HTML dan CSS.</footer>
+
+</main>
+</body>
+</html>
