@@ -94,3 +94,88 @@
             gap: 16px;
             padding: 18px 0;
             border-bottom: 1px solid var(--garis);
+            text-decoration: none;
+            color: inherit;
+        }
+        a.baris:hover .judul { color: var(--aksen); }
+        .judul { font-weight: 700; font-size: 17px; transition: color 0.2s; }
+        .ket { color: var(--redup); font-size: 15px; }
+        .tahun { color: var(--aksen); font-weight: 500; white-space: nowrap; }
+
+        .chip-wadah { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px; }
+        .chip {
+            padding: 7px 16px;
+            border-radius: 999px;
+            font-size: 14px;
+            font-weight: 500;
+            border: 1.5px solid var(--teks);
+        }
+        .chip:nth-child(odd) { background: var(--sorot); }
+
+        footer {
+            margin-top: 72px;
+            color: var(--redup);
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+<main>
+
+    <img src="foto.jpg" alt="Foto Regi" class="foto">
+    <p class="label">Mahasiswa & Freelance • Kota Pekalongan</p>
+    <h1>Muhamad Regina <mark>Jaya Sampurna</mark></h1>
+    <p class="intro">
+        Mahasiswa Fakultas Hukum Universitas Negeri Semarang yang aktif
+        di bidang akademik dan pemrograman.
+    </p>
+    <div class="aksi">
+        <a class="tombol utama" href="cv.pdf" target="_blank" rel="noopener">Lihat CV</a>
+        <a class="tombol" href="#kontak">Hubungi Saya</a>
+    </div>
+
+    <h2>Keterampilan</h2>
+    <div class="chip-wadah">
+        <span class="chip">Python</span>
+        <span class="chip">Data Science</span>
+        <span class="chip">Pengembangan Web</span>
+        <span class="chip">HTML & CSS</span>
+    </div>
+
+    <h2>Proyek</h2>
+    <div class="baris">
+        <div>
+            <div class="judul">Website Profil</div>
+            <div class="ket">Halaman portofolio pribadi dengan HTML dan CSS.</div>
+        </div>
+        <div class="tahun">2026</div>
+    </div>
+    <div class="baris">
+        <div>
+            <div class="judul">Program Python</div>
+            <div class="ket">Kalkulator sederhana dan latihan pemrograman dasar.</div>
+        </div>
+        <div class="tahun">2026</div>
+    </div>
+
+    <h2 id="kontak">Kontak</h2>
+    <a class="baris" href="mailto:jayassampurna@gmail.com">
+        <div>
+            <div class="judul">Email</div>
+            <div class="ket">jayassampurna@gmail.com</div>
+        </div>
+        <div class="tahun">&rarr;</div>
+    </a>
+    <a class="baris" href="https://github.com/jayassampurna-jpg" target="_blank" rel="noopener">
+        <div>
+            <div class="judul">GitHub</div>
+            <div class="ket">github.com/jayassampurna-jpg</div>
+        </div>
+        <div class="tahun">&rarr;</div>
+    </a>
+
+    <footer>&copy; 2026 Regi. Dibuat dengan HTML dan CSS.</footer>
+
+</main>
+</body>
+</html>
